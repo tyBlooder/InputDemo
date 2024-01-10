@@ -1,0 +1,122 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void hoverTest_Start_mA9290D13D5EFC989816C6218D57E9C6B957C1B55 (void);
+extern void hoverTest_Update_m9D2530A8862319C390D0781B705CC4551F35D64E (void);
+extern void hoverTest_OnTriggerEnter_mAFDC1786226C65AF52DC480B79083CF01BBAB019 (void);
+extern void hoverTest__ctor_m41A66D386B6DD43F949731DDB85D369629449342 (void);
+extern void InteractableTest_Start_m15B05E4FF0EE0D892C44D42A8DBC9C423479FCFB (void);
+extern void InteractableTest_OnSelectEnter_mB0AD98BB175D684D696EAABF9B0FEAE4A6E79B64 (void);
+extern void InteractableTest_OnSelectExit_mBF693295F6341FBA5F7477CCD3AD247F4BDC129E (void);
+extern void InteractableTest_OnHoverEntered_m34CAC4165A53CC19BFDDF2397A4917F8C4145D33 (void);
+extern void InteractableTest_OnHoverExited_m1C9592568FB134D939216B1C8B185A791C21F1B2 (void);
+extern void InteractableTest_Update_m6AA3970D0B37E25F976F30EDBE6BCC021E372D3E (void);
+extern void InteractableTest__ctor_m89A1D7063326BAE55226E967C8103BD70780689A (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+extern void BoundedInputManager_OnEnable_m645C1E2E95B8742808BA341939E9D70EA716A8CE (void);
+extern void BoundedInputManager_Update_mB60C3E4AB29A5890582EF7436A1352090C8988A1 (void);
+extern void BoundedInputManager__ctor_mE3F19684547C1D6BD5D7DF1EB8B58694A3FCB8D1 (void);
+extern void BoundedObjectBehavior_Start_mE5A1C619E9D4EED96A691379FD66E058F2F62554 (void);
+extern void BoundedObjectBehavior_Update_m7673D44F68F4C0356FD9305E308E4CB9B2C5D7B9 (void);
+extern void BoundedObjectBehavior_Select_mD75254D1BFDF03D8A9BA2EBD5774FA7F9D944379 (void);
+extern void BoundedObjectBehavior_MoveWithPhysics_m80143879AB4C31202A915ED7683904ED6ABD9ED5 (void);
+extern void BoundedObjectBehavior_MoveDirectly_m8036940254BE1FD1554D5BC2B0CF7681DD52A109 (void);
+extern void BoundedObjectBehavior__ctor_mB12808B16D4E8AE5997C8E8CBBE246BB5CE0D6EF (void);
+extern void ObjectVolumeLimiter_Start_m76D5C879907004DF0BC1D00F885065B45A9F8932 (void);
+extern void ObjectVolumeLimiter_Update_mCBD73E2320FB5A6EF87E9F35E4BE86F8E36379FC (void);
+extern void ObjectVolumeLimiter__ctor_mDE5F83DE71BBD25373B6137519D2025A09E8B14C (void);
+extern void Rotator_Update_m7F3B8D7ADDDCFB0510DB11D9373AD782EA91F153 (void);
+extern void Rotator__ctor_m6E0BD8F0B98B07CAD2239DEE82E3A98006FFC0D5 (void);
+static Il2CppMethodPointer s_methodPointers[27] = 
+{
+	hoverTest_Start_mA9290D13D5EFC989816C6218D57E9C6B957C1B55,
+	hoverTest_Update_m9D2530A8862319C390D0781B705CC4551F35D64E,
+	hoverTest_OnTriggerEnter_mAFDC1786226C65AF52DC480B79083CF01BBAB019,
+	hoverTest__ctor_m41A66D386B6DD43F949731DDB85D369629449342,
+	InteractableTest_Start_m15B05E4FF0EE0D892C44D42A8DBC9C423479FCFB,
+	InteractableTest_OnSelectEnter_mB0AD98BB175D684D696EAABF9B0FEAE4A6E79B64,
+	InteractableTest_OnSelectExit_mBF693295F6341FBA5F7477CCD3AD247F4BDC129E,
+	InteractableTest_OnHoverEntered_m34CAC4165A53CC19BFDDF2397A4917F8C4145D33,
+	InteractableTest_OnHoverExited_m1C9592568FB134D939216B1C8B185A791C21F1B2,
+	InteractableTest_Update_m6AA3970D0B37E25F976F30EDBE6BCC021E372D3E,
+	InteractableTest__ctor_m89A1D7063326BAE55226E967C8103BD70780689A,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+	BoundedInputManager_OnEnable_m645C1E2E95B8742808BA341939E9D70EA716A8CE,
+	BoundedInputManager_Update_mB60C3E4AB29A5890582EF7436A1352090C8988A1,
+	BoundedInputManager__ctor_mE3F19684547C1D6BD5D7DF1EB8B58694A3FCB8D1,
+	BoundedObjectBehavior_Start_mE5A1C619E9D4EED96A691379FD66E058F2F62554,
+	BoundedObjectBehavior_Update_m7673D44F68F4C0356FD9305E308E4CB9B2C5D7B9,
+	BoundedObjectBehavior_Select_mD75254D1BFDF03D8A9BA2EBD5774FA7F9D944379,
+	BoundedObjectBehavior_MoveWithPhysics_m80143879AB4C31202A915ED7683904ED6ABD9ED5,
+	BoundedObjectBehavior_MoveDirectly_m8036940254BE1FD1554D5BC2B0CF7681DD52A109,
+	BoundedObjectBehavior__ctor_mB12808B16D4E8AE5997C8E8CBBE246BB5CE0D6EF,
+	ObjectVolumeLimiter_Start_m76D5C879907004DF0BC1D00F885065B45A9F8932,
+	ObjectVolumeLimiter_Update_mCBD73E2320FB5A6EF87E9F35E4BE86F8E36379FC,
+	ObjectVolumeLimiter__ctor_mDE5F83DE71BBD25373B6137519D2025A09E8B14C,
+	Rotator_Update_m7F3B8D7ADDDCFB0510DB11D9373AD782EA91F153,
+	Rotator__ctor_m6E0BD8F0B98B07CAD2239DEE82E3A98006FFC0D5,
+};
+static const int32_t s_InvokerIndices[27] = 
+{
+	14738,
+	14738,
+	11440,
+	14738,
+	14738,
+	11440,
+	11440,
+	11440,
+	11440,
+	14738,
+	14738,
+	26859,
+	14738,
+	14738,
+	14738,
+	14738,
+	14738,
+	14738,
+	11288,
+	11619,
+	11534,
+	14738,
+	14738,
+	14738,
+	14738,
+	14738,
+	14738,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	27,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

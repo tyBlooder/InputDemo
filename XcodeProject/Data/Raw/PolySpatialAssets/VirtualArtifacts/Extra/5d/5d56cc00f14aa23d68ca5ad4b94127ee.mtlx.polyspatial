@@ -1,0 +1,113 @@
+<?xml version ="1.0"?>
+<materialx version = "1.38" colorspace = "lin_rec709">
+    <multiply name = "MultiplyNode_f2f925f315da40a6811b52f19d18c285" type = "vector4">
+        <input name = "in1" type = "vector4" nodename = "CastSwizzleFromVertexColorNode_f929f17cd1f141448d80f179779b230bToMultiplyNode_f2f925f315da40a6811b52f19d18c285in1" />
+        <input name = "in2" type = "vector4" nodename = "CastSwizzleFrom_Node_91a754257c9f43518de76f72450dd248ToMultiplyNode_f2f925f315da40a6811b52f19d18c285in2" />
+    </multiply>
+    <geomcolor name = "VertexColorNode_f929f17cd1f141448d80f179779b230b" type = "color4">
+    </geomcolor>
+    <image name = "_Node_91a754257c9f43518de76f72450dd248" type = "color4">
+        <input name = "default" type = "color4" value = "1,1,1,1" />
+        <input name = "file" type = "filename" nodename = "_BaseMap" />
+        <input name = "texcoord" type = "vector2" nodename = "_Node_91a754257c9f43518de76f72450dd248_UV_fwd" />
+    </image>
+    <swizzle name = "_Node_91a754257c9f43518de76f72450dd248R" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_91a754257c9f43518de76f72450dd248" />
+        <input name = "channels" type = "string" value = "r" />
+    </swizzle>
+    <swizzle name = "_Node_91a754257c9f43518de76f72450dd248G" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_91a754257c9f43518de76f72450dd248" />
+        <input name = "channels" type = "string" value = "g" />
+    </swizzle>
+    <swizzle name = "_Node_91a754257c9f43518de76f72450dd248B" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_91a754257c9f43518de76f72450dd248" />
+        <input name = "channels" type = "string" value = "b" />
+    </swizzle>
+    <swizzle name = "_Node_91a754257c9f43518de76f72450dd248A" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_91a754257c9f43518de76f72450dd248" />
+        <input name = "channels" type = "string" value = "a" />
+    </swizzle>
+    <texcoord name = "_Node_91a754257c9f43518de76f72450dd248_UV_fwd" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <constant name = "_BaseMap" type = "filename">
+        <input name = "value" type = "filename" value = "placeholder.png" />
+    </constant>
+    <image name = "_Node_0a869aeafee345a18aa16713cc182795" type = "color4">
+        <input name = "default" type = "color4" value = "1,1,1,1" />
+        <input name = "file" type = "filename" nodename = "_EmissionMap" />
+        <input name = "texcoord" type = "vector2" nodename = "_Node_0a869aeafee345a18aa16713cc182795_UV_fwd" />
+    </image>
+    <swizzle name = "_Node_0a869aeafee345a18aa16713cc182795R" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_0a869aeafee345a18aa16713cc182795" />
+        <input name = "channels" type = "string" value = "r" />
+    </swizzle>
+    <swizzle name = "_Node_0a869aeafee345a18aa16713cc182795G" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_0a869aeafee345a18aa16713cc182795" />
+        <input name = "channels" type = "string" value = "g" />
+    </swizzle>
+    <swizzle name = "_Node_0a869aeafee345a18aa16713cc182795B" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_0a869aeafee345a18aa16713cc182795" />
+        <input name = "channels" type = "string" value = "b" />
+    </swizzle>
+    <swizzle name = "_Node_0a869aeafee345a18aa16713cc182795A" type = "float">
+        <input name = "in" type = "color4" nodename = "_Node_0a869aeafee345a18aa16713cc182795" />
+        <input name = "channels" type = "string" value = "a" />
+    </swizzle>
+    <texcoord name = "_Node_0a869aeafee345a18aa16713cc182795_UV_fwd" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <constant name = "_EmissionMap" type = "filename">
+        <input name = "value" type = "filename" value = "placeholder.png" />
+    </constant>
+    <add name = "AddNode_ded7088e543a4bd9b6a08838a6e87e7e" type = "vector4">
+        <input name = "in1" type = "vector4" nodename = "CastSwizzleFrom_Node_0a869aeafee345a18aa16713cc182795ToAddNode_ded7088e543a4bd9b6a08838a6e87e7ein1" />
+        <input name = "in2" type = "vector4" nodename = "MultiplyNode_f2f925f315da40a6811b52f19d18c285" />
+    </add>
+    <dot name = "SplitNode_651b8d555db2440dbe23a9ae32f99530" type = "vector4">
+        <input name = "in" type = "vector4" nodename = "MultiplyNode_f2f925f315da40a6811b52f19d18c285" />
+    </dot>
+    <extract name = "SplitNode_651b8d555db2440dbe23a9ae32f99530R" type = "float">
+        <input name = "in" type = "vector4" nodename = "SplitNode_651b8d555db2440dbe23a9ae32f99530" />
+        <input name = "index" type = "integer" value = "0" />
+    </extract>
+    <extract name = "SplitNode_651b8d555db2440dbe23a9ae32f99530G" type = "float">
+        <input name = "in" type = "vector4" nodename = "SplitNode_651b8d555db2440dbe23a9ae32f99530" />
+        <input name = "index" type = "integer" value = "1" />
+    </extract>
+    <extract name = "SplitNode_651b8d555db2440dbe23a9ae32f99530B" type = "float">
+        <input name = "in" type = "vector4" nodename = "SplitNode_651b8d555db2440dbe23a9ae32f99530" />
+        <input name = "index" type = "integer" value = "2" />
+    </extract>
+    <extract name = "SplitNode_651b8d555db2440dbe23a9ae32f99530A" type = "float">
+        <input name = "in" type = "vector4" nodename = "SplitNode_651b8d555db2440dbe23a9ae32f99530" />
+        <input name = "index" type = "integer" value = "3" />
+    </extract>
+    <GeometryModification name = "SR_UnlitBakedMeshParticlesVertex" type = "vertexshader">
+    </GeometryModification>
+    <realitykit_unlit name = "SR_UnlitBakedMeshParticles" type = "surfaceshader">
+        <input name = "applyPostProcessToneMap" type = "boolean" value = "false" />
+        <input name = "color" type = "color3" nodename = "CastSwizzleFromMultiplyNode_f2f925f315da40a6811b52f19d18c285ToSR_UnlitBakedMeshParticlescolor" />
+        <input name = "opacity" type = "float" nodename = "SplitNode_651b8d555db2440dbe23a9ae32f99530A" />
+    </realitykit_unlit>
+    <surfacematerial name = "USD_UnlitBakedMeshParticles" type = "material">
+        <input name = "vertexshader" type = "vertexshader" nodename = "SR_UnlitBakedMeshParticlesVertex" />
+        <input name = "surfaceshader" type = "surfaceshader" nodename = "SR_UnlitBakedMeshParticles" />
+    </surfacematerial>
+    <swizzle name = "CastSwizzleFromVertexColorNode_f929f17cd1f141448d80f179779b230bToMultiplyNode_f2f925f315da40a6811b52f19d18c285in1" type = "vector4">
+        <input name = "in" type = "color4" nodename = "VertexColorNode_f929f17cd1f141448d80f179779b230b" />
+        <input name = "channels" type = "string" value = "rgba" />
+    </swizzle>
+    <swizzle name = "CastSwizzleFrom_Node_91a754257c9f43518de76f72450dd248ToMultiplyNode_f2f925f315da40a6811b52f19d18c285in2" type = "vector4">
+        <input name = "in" type = "color4" nodename = "_Node_91a754257c9f43518de76f72450dd248" />
+        <input name = "channels" type = "string" value = "rgba" />
+    </swizzle>
+    <swizzle name = "CastSwizzleFrom_Node_0a869aeafee345a18aa16713cc182795ToAddNode_ded7088e543a4bd9b6a08838a6e87e7ein1" type = "vector4">
+        <input name = "in" type = "color4" nodename = "_Node_0a869aeafee345a18aa16713cc182795" />
+        <input name = "channels" type = "string" value = "rgba" />
+    </swizzle>
+    <swizzle name = "CastSwizzleFromMultiplyNode_f2f925f315da40a6811b52f19d18c285ToSR_UnlitBakedMeshParticlescolor" type = "color3">
+        <input name = "in" type = "vector4" nodename = "MultiplyNode_f2f925f315da40a6811b52f19d18c285" />
+        <input name = "channels" type = "string" value = "xyz" />
+    </swizzle>
+</materialx>
