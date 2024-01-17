@@ -18,7 +18,7 @@ namespace PolySpatial.Samples
 
         void OnEnable()
         {
-            m_Button.WasPressed += WasPressed;
+                m_Button.WasPressed += WasPressed;
         }
 
         void WasPressed(string buttonText, MeshRenderer meshrenderer)

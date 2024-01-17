@@ -9,6 +9,10 @@ public class InteractableTest : XRSimpleInteractable
 {
     public Material HoveredMaterial;
 
+    public GiftShowManager gs;
+
+    public int showIndex;
+
     private Material UnHoveredMaterial = null;
 
     private MeshRenderer RendererCom = null;
@@ -28,12 +32,16 @@ public class InteractableTest : XRSimpleInteractable
 
     void OnSelectEnter(SelectEnterEventArgs arg0)
     {
-        transform.localScale = Vector3.one * 0.5f;
+        //transform.localScale = Vector3.one * 0.5f;
+        if (gs != null)
+        {
+            gs.ShowWithIndex(showIndex);
+        }
     }
 
     void OnSelectExit(SelectExitEventArgs arg0 )
     {
-        transform.localScale = Vector3.one * 0.2f;
+        //transform.localScale = Vector3.one * 0.2f;
     }
 
     void OnHoverEntered( HoverEnterEventArgs arg0 )
